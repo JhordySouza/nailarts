@@ -94,7 +94,7 @@ const baseMusicas = [
     {
         'name': 'Status Que Eu Não Queria',
         'artist': 'Zé neto & Cristiano',
-        'path': './src/audio/Zé Neto e Cristiano - NOTIFICAÇÃO PREFERIDA - EsqueceOMundoLaFora.mp3',
+        'path': './src/audio/Zé Neto e Cristiano - STATUS QUE EU NÃO QUERIA - EsqueceOMundoLaFora.mp3',
         'album': 'EsqueceOMundoLaFora',
         'foto': './src/img/album3.jpeg'
     },
@@ -162,9 +162,58 @@ const baseMusicas = [
         'foto': './src/img/album3.jpeg'
     },
     {
+        'name': 'Plágio',
+        'artist': 'May & Karen',
+        'path': './src/audio/May & Karen part. Marcos & Belutti - Plágio (Clipe Oficial)_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
         'name': 'Trouxamente',
         'artist': 'João Gabriel',
         'path': './src/audio/João Gabriel  Trouxamente ft Humberto e Ronaldo.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Batom De Cereja',
+        'artist': 'Israel & Rodolffo',
+        'path': './src/audio/Israel & Rodolffo - Batom De Cereja (Aqui e Agora)_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Esquece De Me Esquecer',
+        'artist': 'Zé F. e Gusttavo L.',
+        'path': './src/audio/Zé Felipe e Gusttavo Lima - Esquece De Me Esquecer (Videoclipe Oficial)_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': ' Revoada No Colchão',
+        'artist': 'Zé F. e M. Sensação',
+        'path': './src/audio/Zé Felipe e Marcynho Sensação - Revoada No Colchão (Videoclipe Oficial)_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'SENTA DANADA',
+        'artist': ' Zé Felipe e B.Pisadinha',
+        'path': './src/audio/SENTA DANADA - ZÉ FELIPE & OS BARÕES DA PISADINHA_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'José Ou Maria',
+        'artist': 'Zé Felipe',
+        'path': './src/audio/Zé Felipe - José Ou Maria (Videoclipe Oficial)_160k.mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Só Tem Eu',
+        'artist': 'Zé Felipe',
+        'path': './src/audio/Zé Felipe - Só Tem Eu (Videoclipe Oficial)_160k.mp3',
         'album': 'Sertanejos 2021',
         'foto': './src/img/album3.jpeg'
     }
