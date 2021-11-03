@@ -1,0 +1,236 @@
+/* ESTILOS GERAIS */
+body, main, div, section, ul, li, img, figure, p, header, nav, h2, a {
+	margin: 0;
+	padding: 0;
+	text-decoration:none;
+	box-sizing: border-box;
+	outline:none;
+	list-style:none;
+}
+
+/* CORPO */
+body {
+	font-family: Rubik, sans-serif;
+	font-family: Rubik, sans-serif;
+    background: linear-gradient(
+	0deg, #121212, #121212), #F1F1F1;
+    color: #F1F1F1;
+}
+
+/* MAIN */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	}									/* */
+.sidebarMenuNavegação{
+    width: 15.9%;
+	padding: 30px;
+	height: calc(100% - 167px);
+}
+.sidebarMenuNavegação > img{
+	margin-bottom: 20px;
+    margin-top: -17px;
+    margin-left: 8px;
+    width: 214px;
+}
+
+/* ASIDE */
+.menuNavegação{}
+
+.listaLinks{}
+.listaLinks > li{
+	margin-bottom: 17px;
+}
+.listaLinks > li:hover{
+	background: #a0435a26;
+    box-shadow: inset 2px 2px 2px rgb(0 0 0 / 20%);
+    text-shadow: none;
+}
+.listaLinks > li > a {
+	color: #f1f1f1;
+	display: flex;
+    align-items: center;
+    margin: 9px 47px;
+
+}
+.listaLinks > li > a > img {
+	width: 28px;
+	margin-right: 20px;
+}
+
+/* SEÇÃO LISTA DE MÚSICAS */
+.secaoMusicas{
+	width: 80%;
+	background-color: #181818;
+}
+.cabecalho{
+	background-image: url(../img/foto7.png);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    position: relative;
+    padding: 20px 80px;
+}
+
+/* USUÁRIO */
+.user{
+	display: flex;
+    align-items: center;
+    float: right;
+}
+.user > img {
+	margin-right: 20px;
+    width: 63px;
+    border-radius: 45px;
+}
+.user > h2 {
+	font-weight: lighter;
+	text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
+
+/* QUANTIDADE DE MÚSICAS */
+.qtdMusicas{
+	position: absolute;
+    left: 80px;
+    bottom: 20px;
+	}						/* */
+.qtdMusicas > p {
+	font-size: 28px;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
+
+/* ÁREA LISTA DE MÚSICAS */
+.areaListaMusicas{
+	padding: 20px 80px;
+}
+#btnPause{
+	background-color: #a0435a;
+    color: #f1f1f1;
+    border: none;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#btnPause:hover{
+    background: #a0435a26;
+    box-shadow: inset 2px 2px 2px rgb(0 0 0 / 20%);
+    text-shadow: none;
+}
+
+/* CABEÇALHO INFO MÚSICAS */
+.cabecalhoInfoMusicas{
+	display: flex;
+	border-bottom: 2px solid #646464;
+    padding: 8px 56px;
+}
+.cabecalhoInfoMusicas > p {
+	width: 26%
+}
+.cabecalhoInfoMusicas > .primeiroItem{
+	width: 60%;
+}
+/* LISTA DE MÚSICAS */
+.listaMusicas{
+	height: 384px;
+    overflow-y: scroll;
+}
+.listaMusicas > li {
+	display: flex;
+	padding: 8px 56px;
+    border-bottom: 1px solid #646464;
+
+}
+.listaMusicas > li:hover{
+	background: #a0435a26;
+    box-shadow: inset 2px 2px 2px rgb(0 0 0 / 20%);
+    text-shadow: none;
+}
+.listaMusicas > li > p {
+	width: 25%;
+	cursor: pointer;
+}
+.listaMusicas > li > .primeiroItem{
+	width: 60%;
+}
+
+/* SEÇÃO DO PLAYER */
+.areaPlayer{
+	width: 100%;
+	height: 104px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px
+}
+
+/* INFORMAÇÕES MUSICA ATUAL */
+.infoMusicaAtual{
+	display: flex;
+    align-items: center;
+}
+
+.imagemAlbum{
+	margin-right: 40px;
+}						/* */
+.imagemAlbum > img{
+	width: 104px;
+}
+.imagemAlbum > figcaption{
+	display: none;
+}
+
+.infoAlbum{}
+.infoAlbum > h2{
+	margin-bottom: 8px;
+	font-size: 19px;
+}
+.infoAlbum > p{}
+
+/* ÁREA DE CONTROLE */
+.areaPlayerControles{
+	position: absolute;
+    padding-left: 708px;
+}
+.areaPlayerControles > button{
+	width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+#btnControlPrev{
+	background-image: url(../img/previous.png);
+}
+#btnControlPlay{
+	background-image: url(../img/play.png);
+	background-size: cover;
+	margin: 0 20px;
+}
+#btnControlPlay.pause{
+	background-image: url(../img/pause.png);
+}
+
+#btnControlnext{
+	background-image: url(../img/next.png);
+}
+
+/* ÁREA DE VOLUME */
+.areaPlayerVolume{
+	display: flex;
+    align-items: center;
+}
+
+.areaPlayerVolume > img{
+	padding-right: 8px;
+}
+
+.areaPlayerVolume > input{}
