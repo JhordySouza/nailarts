@@ -138,7 +138,7 @@ const baseMusicas = [
         'artist': 'MEDUZA',
         'path': './src/audio/MEDUZA, Becky Hill, Goodboys - Lose Control (Lyric Video)_160k.mp3',
         'album': 'Eletronic',
-        'foto': './src/img/album3.jpeg'
+        'foto': './src/img/album2.jpeg'
     },
     {
         'name': 'Piece Of Your Heart',
@@ -166,7 +166,7 @@ const baseMusicas = [
         'artist': 'May & Karen',
         'path': './src/audio/May & Karen part. Marcos & Belutti - Plágio (Clipe Oficial)_160k.mp3',
         'album': 'Sertanejos 2021',
-        'foto': './src/img/album3.jpeg'
+        'foto': './src/img/album2.jpeg'
     },
     {
         'name': 'Trouxamente',
@@ -208,13 +208,34 @@ const baseMusicas = [
         'artist': 'Zé Felipe',
         'path': './src/audio/Zé Felipe - José Ou Maria (Videoclipe Oficial)_160k.mp3',
         'album': 'Sertanejos 2021',
-        'foto': './src/img/album3.jpeg'
+        'foto': './src/img/album2.jpeg'
     },
     {
         'name': 'Só Tem Eu',
         'artist': 'Zé Felipe',
         'path': './src/audio/Zé Felipe - Só Tem Eu (Videoclipe Oficial)_160k.mp3',
         'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Antes de ir',
+        'artist': 'Taty & Romeu',
+        'path': './src/audio/ANTES DE IR TATY PINK & ROMEU 2021_160k.mp3',
+        'album': '2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Tipo Gin',
+        'artist': 'Kevin O Chris',
+        'path': './src/audio/MC Kevin O Chris - Tipo Gin - E Ela Tá Movimentando (Vídeo Oficial - DVD Todo Mundo Ama O Chris)_160k.mp3',
+        'album': 'Todo Mundo Ama O Chris',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Porque Eu Te Amei',
+        'artist': 'Ton Carfi',
+        'path': './src/audio/Ton Carfi - Porque Eu Te Amei (Clipe)_160k.mp3',
+        'album': 'DVD bOM Deus',
         'foto': './src/img/album3.jpeg'
     }
 ];
