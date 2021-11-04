@@ -121,9 +121,9 @@ const baseMusicas = [
     },
     {
         'name': 'TU',
-        'artist': 'Zé neto & Cristiano',
+        'artist': 'Alok, Matheus & Kauan',
         'path': './src/audio/Alok, Matheus & Kauan - TU (Clipe Oficial)_160k.mp3',
-        'album': 'Eletronic',
+        'album': 'Sertanejos 2021',
         'foto': './src/img/album3.jpeg'
     },
     {
