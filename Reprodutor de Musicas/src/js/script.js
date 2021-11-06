@@ -276,7 +276,7 @@ function construirPlayList(musica, musicaId){
 
     listaMusicas.appendChild(musicaElemento);
 }
-
+console
 for(let i = 0; i < baseMusicas.length; i++){
 //console.log(baseMusicas[i]);
 construirPlayList(baseMusicas[i], i)
@@ -322,7 +322,7 @@ function tocarProximaMusica(){
     }else {
         musicaAtual++
     }
-    console.log(musicaAtual);
+ 
     tagAudio.src = baseMusicas[musicaAtual].path
     tagAudio.play()
 
