@@ -237,6 +237,20 @@ const baseMusicas = [
         'path': './src/audio/Ton Carfi - Porque Eu Te Amei (Clipe)_160k.mp3',
         'album': 'DVD bOM Deus',
         'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Friends',
+        'artist': 'Justin Bieber',
+        'path': './src/audio/Justin Bieber  BloodPop - Friends (Official Music Video)  Original  Official MV  2017  HD .mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': ' Yummy',
+        'artist': 'Justin Bieber',
+        'path': './src/audio/Justin Bieber - Yummy (Legendado) (Tradução) (Clipe Oficial).mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
     }
 ];
 console.log(baseMusicas);
