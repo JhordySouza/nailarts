@@ -248,3 +248,54 @@ main {
 }
 
 .areaPlayerVolume > input{}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (min-width:100px){ 
+	.sidebarMenuNavegação{
+	padding: 2%;
+    }
+}   
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (min-width:268px){ 
+	.sidebarMenuNavegação{
+	padding: 2%;
+    }
+}   
+
+/* smartphones, Android phones, landscape iPhone */ 
+@media (min-width:460px){
+	.sidebarMenuNavegação{
+	padding:  2%;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:600px){
+	.sidebarMenuNavegação{
+ 	padding:  2%;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width:801px){
+	.sidebarMenuNavegação{
+ 	padding:  2%;
+    }
+}   
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px){
+	.sidebarMenuNavegação{
+ 	padding: 2%;
+    }
+} 
+
+
+/* hi-res laptops and desktops */ 
+@media (min-width:1281px){
+	.sidebarMenuNavegação{
+ 	padding: 2%;
+    }
+}  
+
