@@ -151,8 +151,32 @@ main {
 /* LISTA DE MÚSICAS */
 .listaMusicas{
 	height: 384px;
-    overflow-y: scroll;
+    overflow-y: scroll;   
 }
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+background: #2e9dd8;
+}
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+width:10px;
+height: 10px;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+background:#333;
+}
+
+/* degrade para a barra vertical */
+::-webkit-scrollbar-thumb {
+background: linear-gradient(to bottom, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+}
+
 .listaMusicas > li {
 	display: flex;
 	padding: 8px 56px;
