@@ -228,7 +228,7 @@ const baseMusicas = [
         'name': 'Tipo Gin',
         'artist': 'Kevin O Chris',
         'path': './src/audio/MC Kevin O Chris - Tipo Gin - E Ela Tá Movimentando (Vídeo Oficial - DVD Todo Mundo Ama O Chris)_160k.mp3',
-        'album': 'Todo Mundo Ama O Chris',
+        'album': 'Kevin o Chris',
         'foto': './src/img/album3.jpeg'
     },
     {
@@ -251,7 +251,85 @@ const baseMusicas = [
         'path': './src/audio/Justin Bieber - Yummy (Legendado) (Tradução) (Clipe Oficial).mp3',
         'album': ' BloodPop',
         'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Impressionando os Anjos',
+        'artist': 'Gustavo Mioto',
+        'path': './src/audio/Gustavo Mioto - Impressionando os Anjos_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Coladinha em mim',
+        'artist': 'Gustavo Mioto & Anita',
+        'path': './src/audio/Gustavo Mioto - Coladinha em mim Part. Anitta_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Flor E O Beija-Flor pt. Marília Mendoça',
+        'artist': 'Henrique e Juliano',
+        'path': './src/audio/Henrique e Juliano - Flor E O Beija-Flor part. Marília Mendonça - DVD Novas Histórias_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Tijolinho Por Tijolinho',
+        'artist': 'Enzo pt. Zé Felipe',
+        'path': './src/audio/Enzo Rabelo - Tijolinho Por Tijolinho Part. Zé Felipe_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'HACKEARAM-ME pt. Marília Mendonça',
+        'artist': 'Tierry',
+        'path': './src/audio/Tierry - HACKEARAM-ME part. Marília Mendonça - DVD Acertou Na Mosca_160k.mp3',
+        'album': 'Acertou Na Mosca',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Ao Vivo E A Cores pt. Anitta',
+        'artist': 'Matheus & Kauan',
+        'path': './src/audio/Matheus & Kauan, Anitta - Ao Vivo E A Cores ft. Anitta_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Vou Desafiar Você',
+        'artist': 'Sapão',
+        'path': './src/audio/Sapão - Vou Desafiar Você (Clipe Oficial)_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'MODO TURBO',
+        'artist': 'Luísa, Pabllo, Anitta',
+        'path': './src/audio/Luísa Sonza, Pabllo Vittar, Anitta - MODO TURBO (Clipe Oficial)_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Pesadão',
+        'artist': 'IZA & Marcelo',
+        'path': './src/audio/IZA - Pesadão (Participação especial Marcelo Falcão)_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Figurinha pt. MC Bruninho',
+        'artist': 'Douglas e Viníciusr',
+        'path': './src/audio/Douglas e Vinícius - Figurinha - part. MC Bruninho_160k.mp3',
+        'album': ' BloodPop',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Estrelinha Pt. Marília Mendonça',
+        'artist': 'Di & Paulino',
+        'path': './src/audio/Di Paullo & Paulino Part. Esp. Marília Mendonça - Estrelinha - DVD Nós e Elas _160k.mp3',
+        'album': 'Nós e Elas ',
+        'foto': './src/img/album3.jpeg'
     }
+
 ];
 console.log(baseMusicas);
 
