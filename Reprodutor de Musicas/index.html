@@ -30,12 +30,12 @@
 
                         <!-- ITEM DE LISTA -->
                          <li>
-                            <a href=""><img src="./src/img/icone2.png" alt=" Browse">Browse</a>
+                            <a href=""><img src="./src/img/icone2.png" alt="Browse">Browse</a>
                         </li>
 
                         <!-- ITEM DE LISTA -->
                          <li>
-                            <a href=""><img src="./src/img/icone3.png" alt=" Linked songs">Liked songs</a>
+                            <a href=""><img src="./src/img/icone3.png" alt="Linked songs">Liked songs</a>
                         </li>
                     </ul>
                 </nav>
@@ -85,7 +85,7 @@
 
                 <div class="infoMusicaAtual">
                     <figure class="imagemAlbum">
-                        <img id=fotoAlbum src="./src/img/album4.png" alt="Album">
+                        <img id=fotoAlbum  alt="Artista">
                         <figcaption>Legenda</figcaption>
                     </figure>
                     <div class="infoAlbum">
@@ -93,7 +93,16 @@
                         <p id=nomeAlbum>Coldplay</p>
                     </div>
                 </div>
-
+                 <div class="duração">
+                    <div class="barra">
+                        <progress value="0" max="1" step="1"></progress>
+                        <div class="ponto"></div>
+                 </div>
+                    <div class="tempo">
+                        <p class="inicio">0:00</p>
+                        <p class="fim">0:00</p>
+                    </div>
+                 </div>
                 <div class="areaPlayerControles" >
                     <button id="btnControlPrev"></button>
                     <button id="btnControlPlay"></button>
@@ -101,7 +110,7 @@
                 </div>
 
                 <div class="areaPlayerVolume">
-                    <img src="./src/img/volume.png">
+                    <img src="./src/img/volume.png" alt="Volume" >
                     <input type="range" max="1" value="1" step="0.1" >
                 </div>
 

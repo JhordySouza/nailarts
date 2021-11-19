@@ -331,22 +331,36 @@ const baseMusicas = [
     }
 
 ];
-console.log(baseMusicas);
-
+//Variaveis globais
 const listaMusicas = document.querySelector('.listaMusicas')
-const tagAudio = document.getElementById('saidaAudio');
 const primeiraMusica = baseMusicas[0];
+const botaoPausar = document.getElementById('btnPause');
+const botaoPlay = document.getElementById('btnControlPlay');
+let tagAudio = document.getElementById('saidaAudio');
+let musicaAtual = 0;
+let mudo = document.querySelector('.areaPlayerVolume img');
+let duracaoMusica = document.querySelector('.fim');
+let audio = tagAudio;
+//Eventos
 
 tagAudio.src = primeiraMusica.path;
 
 atualizaPlay(baseMusicas[0].album, baseMusicas[0].name, baseMusicas[0].foto)
 qtdMusicas()
 
-const botaoPausar = document.getElementById('btnPause');
-const botaoPlay = document.getElementById('btnControlPlay');
+mudo.addEventListener('click', mute );
 
-let musicaAtual = 0;
+botaoPlay.addEventListener('click', tocarMusica);
 
+botaoPausar.addEventListener('click', pausarMusica);
+
+tagAudio.addEventListener('timeupdate', atualizarBarra);
+
+window.onload = function () {
+
+ duracaoMusica.textContent = segundosParaMinutos(Math.floor(tagAudio.duration));
+}
+//Funções
 function construirPlayList(musica, musicaId){
     const musicaElemento = document.createElement('li');
     const nomeMusica = document.createElement('p');
@@ -368,7 +382,8 @@ function construirPlayList(musica, musicaId){
 
     listaMusicas.appendChild(musicaElemento);
 }
-console
+
+
 for(let i = 0; i < baseMusicas.length; i++){
 //console.log(baseMusicas[i]);
 construirPlayList(baseMusicas[i], i)
@@ -385,6 +400,7 @@ function tocarMusica(evento){
         musicaAtual = Number(musicaId);
         tagAudio.play();
 
+
         atualizaPlay(baseMusicas[musicaAtual].album, baseMusicas[musicaAtual].name, baseMusicas[musicaAtual].foto)
 
         botaoPlay.classList.add('pause')
@@ -399,14 +415,11 @@ function tocarMusica(evento){
         }
     }
 }
-botaoPlay.addEventListener('click', tocarMusica);
 
 function pausarMusica(){
     tagAudio.pause();
     botaoPlay.classList.remove('pause')
-
 }
-botaoPausar.addEventListener('click', pausarMusica)
 
 function tocarProximaMusica(){
     if(musicaAtual === baseMusicas.length -1){
@@ -414,7 +427,7 @@ function tocarProximaMusica(){
     }else {
         musicaAtual++
     }
- 
+
     tagAudio.src = baseMusicas[musicaAtual].path
     tagAudio.play()
 
@@ -425,6 +438,7 @@ function tocarProximaMusica(){
 
     botaoPlay.classList.add('pause')
 }
+
 function tocarMusicaAnterior(){
     if(musicaAtual === 0){
         musicaAtual = baseMusicas.length -1;
@@ -441,7 +455,6 @@ function tocarMusicaAnterior(){
     atualizaPlay(nomeAlbum, nomeMusica, fotoAlbum)
 
     botaoPlay.classList.add('pause')
-
 }
 
 //NEXT
@@ -480,12 +493,42 @@ function qtdMusicas(){
 function mute(){ 
     if(tagAudio.muted){
         tagAudio.muted = false;
+
     }else {
         tagAudio.muted = true;
     }
 }
 
-let mudo = document.querySelector('.areaPlayerVolume img');
-mudo.addEventListener('click', mute );
+function atualizarBarra(){
+    let barra = document.querySelector('progress');
+    barra.style.width = Math.floor((tagAudio.currentTime / tagAudio.duration) * 100) + '%';
+    let tempoDecorrido = document.querySelector('.inicio');
+    tempoDecorrido.textContent = segundosParaMinutos(Math.floor(tagAudio.currentTime));
+    let duracao = document.querySelector('.fim');
+    duracao.textContent = segundosParaMinutos(Math.floor(tagAudio.duration));
+    if(barra.style.width === 100){
+        console.log('passou para a proxima musica');
+    }
+}
 
 
+function segundosParaMinutos(segundos){
+    let campoMinutos = Math.floor(segundos/60); 
+    let campoSegundos = segundos %60 ;
+
+    if(campoSegundos < 10) {
+        campoSegundos = '0' + campoSegundos;
+    }
+    return campoMinutos+':'+campoSegundos;
+}
+
+function proximaMusica() {
+    let duracaoTotal = tagAudio.duration;
+    let contagem = tagAudio.currentTime;
+    console.log(contagem);
+    if(contagem === duraçãoTotal) {
+        musicaAtual++
+        tagAudio.play()
+    
+    }
+}

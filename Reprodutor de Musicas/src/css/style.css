@@ -1,5 +1,5 @@
 /* ESTILOS GERAIS */
-body, main, div, section, ul, li, img, figure, p, header, nav, h2, a {
+body, main, div, section, ul, li, img, figure, p, header, nav, h2, a, progress {
 	margin: 0;
 	padding: 0;
 	text-decoration:none;
@@ -225,9 +225,63 @@ background: linear-gradient(to bottom, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b
 .infoAlbum{}
 .infoAlbum > h2{
 	margin-bottom: 8px;
-	font-size: 19px;
+	font-size: 17px;
 }
 .infoAlbum > p{}
+
+/* ÁREA DURAÇÃO DA MÚSICA*/
+
+.duração{
+	width: 400px;
+	margin-top: -58px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.duração > .barra{
+	width: 400px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.duração > .barra > .ponto{
+	width: 10px;
+    height: 10px;
+    background-color: none;
+    border-radius: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.duração > .barra > .ponto:hover{
+	width: 12px;
+    height: 12px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.duração > .barra > progress{
+	height: 72%;
+    width: 0;
+    background-color: #333;
+}
+
+.duração > .tempo{
+	display: flex;
+    justify-content: space-between;
+}
+
+.duração > .tempo > .inicio{}
+
+.duração > .tempo > .fim{}
 
 /* ÁREA DE CONTROLE */
 .areaPlayerControles{
@@ -262,6 +316,8 @@ background: linear-gradient(to bottom, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b
 }
 
 /* ÁREA DE VOLUME */
+
+
 .areaPlayerVolume{
 	display: flex;
     align-items: center;
