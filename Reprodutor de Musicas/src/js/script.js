@@ -183,6 +183,13 @@ const baseMusicas = [
         'foto': './src/img/album3.jpeg'
     },
     {
+        'name': 'Se Namorar Estraga prt. M.B',
+        'artist': 'Israel & Rodolffo',
+        'path': './src/audio/Israel & Rodolffo, Marcos & Belutti - Se Namorar Estraga (Aqui e Agora) (320 kbps).mp3',
+        'album': 'Sertanejos 2021',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
         'name': 'Esquece De Me Esquecer',
         'artist': 'Zé F. e Gusttavo L.',
         'path': './src/audio/Zé Felipe e Gusttavo Lima - Esquece De Me Esquecer (Videoclipe Oficial)_160k.mp3',
@@ -327,6 +334,13 @@ const baseMusicas = [
         'artist': 'Di & Paulino',
         'path': './src/audio/Di Paullo & Paulino Part. Esp. Marília Mendonça - Estrelinha - DVD Nós e Elas _160k.mp3',
         'album': 'Nós e Elas ',
+        'foto': './src/img/album3.jpeg'
+    },
+    {
+        'name': 'Yatra  No Llores Más',
+        'artist': 'Simone  Simaria',
+        'path': './src/audio/Simone  Simaria Sebastián Yatra  No Llores Más (1).mp3',
+        'album': 'part. Sebastián ',
         'foto': './src/img/album3.jpeg'
     }
 
