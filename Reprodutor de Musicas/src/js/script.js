@@ -370,9 +370,9 @@ botaoPausar.addEventListener('click', pausarMusica);
 
 tagAudio.addEventListener('timeupdate', atualizarBarra);
 
-window.onload = function () {
 
- duracaoMusica.textContent = segundosParaMinutos(Math.floor(tagAudio.duration));
+window.onload = function () {
+    duracaoMusica.textContent = segundosParaMinutos(Math.floor(tagAudio.duration));
 }
 //Funções
 function construirPlayList(musica, musicaId){
